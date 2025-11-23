@@ -16,4 +16,4 @@ jobs:
     steps:
       - name: Ejecutar cron de Moodle
         run: |
-          curl -A "Mozilla/5.0" "https://retox.walver.top/admin/cron.php?password=Retox2025"
+          curl -A "Mozilla/5.0" "https://retox.walver.top/admin/cron.php?password=Retoxwa2025"
