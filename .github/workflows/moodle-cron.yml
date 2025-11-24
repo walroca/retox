@@ -1,19 +1,14 @@
 name: Moodle Cron
 
-# Configuración de activación
 on:
-  # Ejecución automática cada 5 minutos (UTC)
   schedule:
     - cron: "*/5 * * * *"
-  # Permite ejecución manual desde GitHub
   workflow_dispatch:
 
 jobs:
   run-cron:
-    # Servidor donde se ejecuta
     runs-on: ubuntu-latest
-
     steps:
       - name: Ejecutar cron de Moodle
         run: |
-          curl -A "Mozilla/5.0" "https://retox.walver.top/admin/cron.php?password=Retoxwa2025"
+          curl -A "Mozilla/5.0" "https://retox.walver.top/admin/cron.php?password=${{ secrets.MOODLE_PASS }}"
