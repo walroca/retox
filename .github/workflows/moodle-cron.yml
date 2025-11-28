@@ -2,7 +2,7 @@ name: Moodle Cron
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/20 * * * *"
   workflow_dispatch:
 
 jobs:
